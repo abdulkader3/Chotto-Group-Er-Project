@@ -6,9 +6,7 @@ const page = () => {
 
 
 
-      <div className="w-ful h-screen ">
-        <h1>shanto</h1>
-      </div>
+      <h1>Home page btro</h1>
 
 
 
