@@ -8,6 +8,7 @@ const page = () => {
 
       <div className="w-ful h-screen ">
         <h1>shanto</h1>
+        <p>some chage</p>
       </div>
 
 
