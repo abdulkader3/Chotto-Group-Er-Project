@@ -4,7 +4,7 @@ const Navber = () => {
   return (
     <>
 
-    <div className=" w-full h-[80px] bg-[#000] text-[#fff] ">
+    <div className=" w-full h-[80px] bg-[#227765] text-[#fff] ">
         Navber
     </div>
       

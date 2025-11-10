@@ -1,16 +1,12 @@
 import React from 'react';
+import Banner from "../../Components/Services/Banner"
 
 const page = () => {
   return (
     <>
 
+      <Banner/>
 
-
-      <h1>Home page btro</h1>
-
-
-
-      
     </>
   );
 }

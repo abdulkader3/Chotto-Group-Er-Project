@@ -6,7 +6,7 @@ const page = () => {
 
 
 
-      <h1>Home page btro</h1>
+      <h1>Home page bro</h1>
 
 
 
