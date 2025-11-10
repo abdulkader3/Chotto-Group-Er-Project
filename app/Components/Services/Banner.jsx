@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="relative flex items-center justify-center bg-gray-900 overflow-hidden">
       {/* ------------ Banner section -------- */}
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[450px]">
       
       <Image
         src={photosOfbenners} 
@@ -21,19 +21,10 @@ const Banner = () => {
         src={ photosOfractangale} 
         alt="Rectangle"
         fill
-        className="object-cover rounded-xl opacity-40" 
+        className="object-cover rounded-xl opacity-60" 
       />
       
     </div>
-      
-      {/* <Image
-        src={photosOfbenners} 
-        alt="Banner"
-        fill
-        className="object-cover opacity-70"
-      /> */}
-
-      
       <div className=" text-center text-white px-4 absolute ">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Our Expertise, Your Vision
