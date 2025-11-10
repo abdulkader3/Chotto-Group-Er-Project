@@ -6,9 +6,8 @@ const page = () => {
 
 
 
-      <div className="w-ful h-screen ">
-        <h1>shanto</h1>
-        <p>some chage</p>
+      <div className="w-full h-screen bg-green-300 flex justify-center items-center ">
+        <h1 className='text-7xl'>Home Screen</h1>
       </div>
 
 
