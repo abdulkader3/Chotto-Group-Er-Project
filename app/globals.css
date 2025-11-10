@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
 
 :root {
   --background: #ffffff;
@@ -8,8 +14,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand:#2E7D32;
+  --color-contactmessage: #212121;
+  --color-contactmessagesecond: #09231E;
+  --color-serpara:#4A5565;
+  --color-inputColor:#F3F3F5;
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-Inter : "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
