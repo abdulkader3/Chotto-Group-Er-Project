@@ -22,23 +22,23 @@ const Navber = () => {
       <ul className='flex gap-[30px] '>
 
         <li className=' hover:text-[#2E7D32] transition-all '>
-          <Link href={"#"}> Home </Link>
+          <Link href={"/"}> Home </Link>
         </li>
 
         <li className=' hover:text-[#2E7D32] transition-all '>
-          <Link href={"#"}> About </Link>
+          <Link href={"/about"}> About </Link>
         </li>
 
         <li className=' hover:text-[#2E7D32] transition-all '>
-          <Link href={"#"}> Services </Link>
+          <Link href={"/services"}> Services </Link>
         </li>
 
         <li className=' hover:text-[#2E7D32] transition-all '>
-          <Link href={"#"}> Projects </Link>
+          <Link href={"/projects"}> Projects </Link>
         </li>
 
         <li className=' hover:text-[#2E7D32] transition-all '>
-          <Link href={"#"}> Contact </Link>
+          <Link href={"/contact"}> Contact </Link>
         </li>
 
       </ul>
