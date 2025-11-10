@@ -6,7 +6,9 @@ const page = () => {
 
 
 
-      <h1>Home page btro</h1>
+      <div className="w-full h-screen bg-green-300 flex justify-center items-center ">
+        <h1 className='text-7xl'>Home Screen</h1>
+      </div>
 
 
 
