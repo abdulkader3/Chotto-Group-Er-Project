@@ -1,5 +1,15 @@
 import React from "react";
 import Text from "@/app/Components/contact/utill/Text";
+import { FiSend } from "react-icons/fi";
+import { MdAccessTime } from "react-icons/md";
+import { HiOutlineMail } from "react-icons/hi";
+import { FiPhone } from "react-icons/fi";
+import { IoLocationOutline } from "react-icons/io5";
+
+
+
+
+
 
 const Message = () => {
   return (
@@ -78,9 +88,10 @@ const Message = () => {
 
                   <button
                     type="submit"
-                    className="w-full h-[49px] mt-12 rounded-[30px] bg-brand flex justify-center items-center font-Inter font-medium text-sm text-white"
+                    className="w-full h-[49px] mt-12 rounded-[30px] bg-brand flex justify-center gap-[10px] items-center font-Inter font-medium text-sm text-white"
                   >
-                    Send Message
+                    Send Message <FiSend />
+
                   </button>
                 </form>
               </div>
@@ -105,12 +116,16 @@ const Message = () => {
               {/* touch box */}
 
               <div
-                className="w-full p-6 flex justify-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
+                className="w-full p-6 flex items-center  gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
                  rounded-2xl mt-[62px]"
               >
+                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
+                  <MdAccessTime className="text-2xl  " />
+
+                </div>
                 <div className="">
                   <Text varaint="h4" className="text-contactmessagesecond">
-                    Business Hours
+                     Business Hours
                   </Text>
                   <Text varaint="h5" className="text-serpara mt-1">
                     Mon-Sat, 9:00 AM – 6:00 PM
@@ -119,9 +134,13 @@ const Message = () => {
               </div>
 
               <div
-                className="w-full p-6 flex justify-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
+                className="w-full p-6 flex items-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
                  rounded-2xl mt-[62px]"
-              >
+              >  
+               <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
+                  <HiOutlineMail  className="text-2xl  " />
+
+                </div>
                 <div className="">
                   <Text varaint="h4" className="text-contactmessagesecond">
                     Email
@@ -133,9 +152,13 @@ const Message = () => {
               </div>
 
               <div
-                className="w-full p-6 flex justify-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
+                className="w-full p-6 flex items-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
                  rounded-2xl mt-[62px]"
               >
+                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
+                  <FiPhone   className="text-2xl  " />
+
+                </div>
                 <div className="">
                   <Text varaint="h4" className="text-contactmessagesecond">
                     Contact Us
@@ -150,6 +173,13 @@ const Message = () => {
                 className="w-full p-6 flex justify-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
                  rounded-2xl mt-[62px]"
               >
+
+                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
+                  <IoLocationOutline    className="text-2xl  " />
+
+                </div>
+
+                
                 <div className="">
                   <Text varaint="h4" className="text-contactmessagesecond">
                     Location
@@ -160,6 +190,7 @@ const Message = () => {
                   </Text>
                 </div>
               </div>
+
               <Text varaint="h3" className="text-[20px] mt-12">Connect With Us</Text>
             </div>
 
