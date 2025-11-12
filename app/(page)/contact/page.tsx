@@ -4,13 +4,10 @@ const page = () => {
   return (
     <>
 
+      <div className="w-full h-screen bg-amber-300 flex justify-center items-center ">
+        <h1 className='md:text-7xl text-2xl'>contact page</h1>
+      </div>
 
-
-      <h1>Home page btro</h1>
-
-
-
-      
     </>
   );
 }
