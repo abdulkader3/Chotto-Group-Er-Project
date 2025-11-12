@@ -13,12 +13,12 @@ const Footer = () => {
   return (
     <>
 
-    <div className=" w-full h-[445px] bg-[#09231E] text-[#979797] flex justify-center items-center flex-col px-[150px] ">
+    <div className="w-full min-h-[auto] md:h-[445px] bg-[#09231E] text-[#979797] flex justify-center items-center flex-col px-[20px] md:px-[150px] py-[40px] md:py-0">
         
 
-        <div className="w-full flex justify-between ">
+        <div className="w-full flex flex-col md:flex-row md:justify-between gap-[30px] md:gap-0">
 
-          <div className="row text-[16px]  ">
+          <div className="row text-[14px] md:text-[16px]">
 
             <div className="w-[119px] h-[40px]">
               <Link href={"/"} className=" ">
@@ -26,7 +26,7 @@ const Footer = () => {
             </Link>
             </div>
 
-            <p className='mt-[16px] mb-[32px] '>Building with precision and <br/> sustainability for over 15 years.</p>
+            <p className='mt-[16px] mb-[32px] text-[13px] md:text-[16px]'>Building with precision and <br/> sustainability for over 15 years.</p>
 
 
             <div className="flex gap-[15px] ">
@@ -35,7 +35,7 @@ const Footer = () => {
               <Link className='w-[20px] h-[20px] ' href={"#"}> <Image src={Insta} alt='Link' className='w-full h-full'/>  </Link>
             </div>
 
-            <p className='mt-[15px] '>Concern of Creative Business Group</p>
+            <p className='mt-[15px] text-[12px] md:text-[16px]'>Concern of Creative Business Group</p>
             
 
 
@@ -44,11 +44,11 @@ const Footer = () => {
           <div className="row">
 
 
-            <div className="Quick-Links text-[16lpx] flex flex-col gap-[16px] ">
+            <div className="Quick-Links text-[14px] md:text-[16px] flex flex-col gap-[16px] ">
 
               <p className=' font-semibold text-white'>Quick Links</p>
 
-              <div className=" font-normal flex flex-col gap-[10px] ">
+              <div className=" font-normal flex flex-col gap-[10px] text-[13px] md:text-[16px]">
                 <Link href={"#"}> About Us </Link>
                 <Link href={"#"}> Services </Link>
                 <Link href={"#"}> Projects </Link>
@@ -58,14 +58,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row hidden md:block">
 
 
-            <div className="Services text-[16lpx] flex flex-col gap-[16px] ">
+            <div className="Services text-[14px] md:text-[16px] flex flex-col gap-[16px] ">
 
               <p className=' font-semibold text-white'>Services</p>
 
-              <div className=" font-normal flex flex-col gap-[10px] ">
+              <div className=" font-normal flex flex-col gap-[10px] text-[13px] md:text-[16px]">
                 <Link href={"#"}> Residential Construction </Link>
                 <Link href={"#"}> Commercial Projects </Link>
                 <Link href={"#"}> Industrial Development </Link>
@@ -80,15 +80,15 @@ const Footer = () => {
           <div className="row">
 
 
-            <div className="Contact Info text-[16lpx] flex flex-col gap-[16px] ">
+            <div className="Contact Info text-[14px] md:text-[16px] flex flex-col gap-[16px] ">
 
               <p className=' font-semibold text-white'>Contact Info</p>
 
-              <div className=" font-normal flex flex-col gap-[10px] ">
-                <p className='flex gap-[8px] '> <span className='text-[#2E7D32] '> <CiLocationOn /> </span> 123 Construction Ave, Dhaka, Bangladesh </p>
-                <p className='flex gap-[8px] '> <span className='text-[#2E7D32] '> <LuPhone /> </span> +880 1234-567890 </p>
-                <p className='flex gap-[8px] '> <span className='text-[#2E7D32] '> <CiMail/> </span> info@buildtech.com </p>
-                <p className='flex gap-[8px] '> <span className='text-[#2E7D32] '> <GoClock/> </span> Mon-Sat, 9:00 AM – 6:00 PM </p>
+              <div className=" font-normal flex flex-col gap-[10px] text-[12px] md:text-[16px]">
+                <p className='flex gap-[8px] items-start '> <span className='text-[#2E7D32] text-[16px] md:text-[20px] flex-shrink-0'> <CiLocationOn /> </span> <span>123 Construction Ave, Dhaka, Bangladesh</span> </p>
+                <p className='flex gap-[8px] items-center '> <span className='text-[#2E7D32] flex-shrink-0'> <LuPhone /> </span> +880 1234-567890 </p>
+                <p className='flex gap-[8px] items-center '> <span className='text-[#2E7D32] flex-shrink-0'> <CiMail/> </span> info@buildtech.com </p>
+                <p className='flex gap-[8px] items-start '> <span className='text-[#2E7D32] flex-shrink-0'> <GoClock/> </span> <span>Mon-Sat, 9:00 AM – 6:00 PM</span> </p>
                 
 
               </div>
@@ -98,10 +98,10 @@ const Footer = () => {
         
         </div>
 
-        <div className="w-full h-[1px] bg-[#97979776] mt-[80px] mb-[32px] "></div>
+        <div className="w-full h-[1px] bg-[#97979776] mt-[32px] md:mt-[80px] mb-[32px] "></div>
 
         <div className="w-full flex justify-center items-center">
-          <p className='text-[16px] '>© 2025 BuildTech Construction. All rights reserved.</p>
+          <p className='text-[12px] md:text-[16px] text-center'>© 2025 BuildTech Construction. All rights reserved.</p>
         </div>
 
 

@@ -7,7 +7,7 @@ const page = () => {
 
 
       <div className="w-full h-screen bg-amber-300 flex justify-center items-center ">
-        <h1 className='text-7xl'>contact page</h1>
+        <h1 className='md:text-7xl text-2xl'>contact page</h1>
       </div>
 
 
