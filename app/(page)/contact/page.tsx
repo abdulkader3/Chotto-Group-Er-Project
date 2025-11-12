@@ -1,12 +1,15 @@
 import React from 'react';
+import Banner from "@/app/Components/contact/Banner"
+import Message from "@/app/Components/contact/Message"
 
 const page = () => {
   return (
     <>
 
-      <div className="w-full h-screen bg-amber-300 flex justify-center items-center ">
-        <h1 className='md:text-7xl text-2xl'>contact page</h1>
-      </div>
+
+    <Banner/>
+    <Message/>
+      
 
     </>
   );
