@@ -9,8 +9,6 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 
-
-
 const Navber = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -71,25 +69,25 @@ const Navber = () => {
 
     {/* Mobile Menu */}
     {isMenuOpen && (
-      <div className="md:hidden bg-white border-t">
-        <ul className='flex flex-col gap-0'>
-          <li className='hover:text-[#2E7D32] transition-all border-b py-3 px-5'>
+      <div className="md:hidden bg-white ">
+        <ul className='flex flex-col gap-0 items-end'>
+          <li className='hover:text-[#2E7D32] transition-all py-3 px-5'>
             <Link href={"/"} onClick={closeMenu}> Home </Link>
           </li>
 
-          <li className='hover:text-[#2E7D32] transition-all border-b py-3 px-5'>
+          <li className='hover:text-[#2E7D32] transition-all py-3 px-5'>
             <Link href={"/about"} onClick={closeMenu}> About </Link>
           </li>
 
-          <li className='hover:text-[#2E7D32] transition-all border-b py-3 px-5'>
+          <li className='hover:text-[#2E7D32] transition-all py-3 px-5'>
             <Link href={"/services"} onClick={closeMenu}> Services </Link>
           </li>
 
-          <li className='hover:text-[#2E7D32] transition-all border-b py-3 px-5'>
+          <li className='hover:text-[#2E7D32] transition-all py-3 px-5'>
             <Link href={"/projects"} onClick={closeMenu}> Projects </Link>
           </li>
 
-          <li className='hover:text-[#2E7D32] transition-all border-b py-3 px-5'>
+          <li className='hover:text-[#2E7D32] transition-all py-3 px-5'>
             <Link href={"/contact"} onClick={closeMenu}> Contact </Link>
           </li>
 
