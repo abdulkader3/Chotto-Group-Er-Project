@@ -1,12 +1,15 @@
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 
 const PrimaryButton = ({
-    Title
+    Title,
+    ArroIcon,
+    py,
 }) => {
   return (
     <>
 
-    <button className=' py-[2px] md:py-[8px]  px-[10px] md:px-[24px] bg-[#2E7D32] rounded-[20px] text-white ' > {Title} </button>
+    <button className={` py-[2px] ${py ? "md:py-[16px]" : "md:py-[8px]"}   px-[10px] md:px-[24px] rounded-full bg-[#2E7D32] text-white flex items-center gap-2 `} > {Title} {ArroIcon ?<FaArrowRight />:"" } </button>
       
     </>
   );
