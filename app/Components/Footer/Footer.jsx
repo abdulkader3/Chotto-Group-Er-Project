@@ -49,10 +49,11 @@ const Footer = () => {
               <p className=' font-semibold text-white'>Quick Links</p>
 
               <div className=" font-normal flex flex-col gap-[10px] text-[13px] md:text-[16px]">
-                <Link href={"#"}> About Us </Link>
-                <Link href={"#"}> Services </Link>
-                <Link href={"#"}> Projects </Link>
-                <Link href={"#"}> Contact </Link>
+                <Link href={"/"}> Home </Link>
+                <Link href={"/about"}> About Us </Link>
+                <Link href={"/contact"}> Services </Link>
+                <Link href={"/projects"}> Projects </Link>
+                <Link href={"/services"}> Contact </Link>
 
               </div>
             </div>
