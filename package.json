@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
+    "mapbox-gl": "^3.16.0",
     "next": "16.0.1",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "react-icons": "^5.5.0"
+    "react": "^19.0.0-rc.1",
+    "react-dom": "^19.0.0-rc.1",
+    "react-icons": "^5.5.0",
+    "react-map-gl": "^8.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
