@@ -8,9 +8,27 @@ const PrimaryButton = ({
 }) => {
   return (
     <>
-
-    <button className={` py-[2px] ${py ? "md:py-[16px] py-[8px]" : "md:py-[8px] py-[3px]"} flex justify-center   px-[10px] md:px-[24px] rounded-full bg-[#2E7D32] text-white flex items-center gap-2 `} > {Title} {ArroIcon ?<FaArrowRight />:"" } </button>
-      
+    <button className={`
+      py-1.5 sm:py-2 md:py-3 lg:py-4
+      px-3.5 sm:px-4.5 md:px-6
+      text-xs sm:text-sm md:text-base
+      rounded-full
+      bg-[#2E7D32] 
+      text-white 
+      flex 
+      justify-center 
+      items-center 
+      gap-1 sm:gap-2
+      font-medium
+      transition-all
+      duration-300
+      hover:bg-[#1e5e2f]
+      active:scale-95
+      whitespace-nowrap
+    `}>
+      {Title} 
+      {ArroIcon ? <FaArrowRight className="text-xs sm:text-sm md:text-base" /> : ""} 
+    </button>
     </>
   );
 }
