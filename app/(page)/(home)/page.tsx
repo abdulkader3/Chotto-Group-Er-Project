@@ -1,6 +1,8 @@
 import React from "react";
 import HomeComp1 from '../../Components/Home/HomeComp1'
 import HomeComp2 from '../../Components/Home/HomeComp2'
+import Components3 from '../../Components/Home/Components3'
+
 
 const page = () => {
   return (
@@ -14,6 +16,11 @@ const page = () => {
     {/* Components 2 */}
     <HomeComp2/>
     {/* Components 2 */}
+
+
+    {/* Components 3 */}
+    <Components3/>
+    {/* Components 3 */}
 
     </>
   );
