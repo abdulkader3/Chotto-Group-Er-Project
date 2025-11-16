@@ -4,8 +4,13 @@ import { FiSend } from "react-icons/fi";
 import { MdAccessTime } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
+import { IoLogoInstagram } from "react-icons/io5";
+import { LuYoutube } from "react-icons/lu";
 import { IoLocationOutline } from "react-icons/io5";
-
+import CommonCard from "../contact/utill/Commoncard"
+import Inputlabel from "../contact/utill/Inputlabel"
 
 
 
@@ -28,67 +33,35 @@ const Message = () => {
                 </Text>
                 <form>
                   {/* name input */}
-                  <div className="mt-12">
-                    <Text varaint="label" className="text-contactmessagesecond">
-                      Full Name
-                    </Text>
-                    <div className="w-full mt-2 rounded-2xl pl-4 py-4 bg-inputColor focus-within:outline-[3px] focus-within:outline-[#D1D5DC]">
-                      <input
-                        type="text"
-                        placeholder="John Doe"
-                        className="w-full font-Inter text-sm font-normal  outline-none
-                                text-contactmessagesecond"
-                      />
-                    </div>
-                  </div>
 
+                  <Inputlabel labelname={" Full Name"}  typename={"text"} placeholdername={"John Doe"}/>
+            
                   {/* email input */}
-                  <div className="mt-12">
-                    <Text varaint="label" className="text-contactmessagesecond">
-                      Email Address
-                    </Text>
-                    <div className="w-full mt-2 rounded-2xl pl-4 py-4 bg-inputColor focus-within:outline-[3px] focus-within:outline-[#D1D5DC]">
-                      <input
-                        type="email"
-                        placeholder="john@example.com"
-                        className="w-full font-Inter text-sm font-normal  outline-none
-                                text-contactmessagesecond"
-                      />
-                    </div>
-                  </div>
+
+                  <Inputlabel labelname={"Email Address"}  typename={"email"} placeholdername={"john@example.com"}/>
 
                   {/* phone input */}
-                  <div className="mt-12">
-                    <Text varaint="label" className="text-contactmessagesecond">
-                      Phone Number
-                    </Text>
-                    <div className="w-full mt-2 rounded-2xl pl-4 py-4 bg-inputColor focus-within:outline-[3px] focus-within:outline-[#D1D5DC]">
-                      <input
-                        type="number"
-                        placeholder="+880 1711-123456"
-                        className="w-full font-Inter text-sm font-normal  outline-none
-                                text-contactmessagesecond"
-                      />
-                    </div>
-                  </div>
 
+                  <Inputlabel labelname={"Phone Number"}  typename={"number"} placeholdername={"+880 1711-123456"}/>
+                
                   {/* messgae  input */}
+
                   <div className="mt-12">
                     <Text varaint="label" className="text-contactmessagesecond">
-                      Project Details
+                      
                     </Text>
                     <div className="w-full mt-2 rounded-2xl pl-4 py-4 bg-inputColor focus-within:outline-[3px] focus-within:outline-[#D1D5DC]">
                       <textarea
                         placeholder="Tell us about your project..."
                         className="w-full h-[124px] font-Inter text-sm font-normal  outline-none
-                                text-contactmessagesecond"
+                                text-contactmessagesecond resize-none"
                       ></textarea>
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full h-[49px] mt-12 rounded-[30px] bg-brand flex justify-center gap-[10px] items-center font-Inter font-medium text-sm text-white"
+                    className="w-full h-[49px] mt-12 rounded-[30px] bg-brand flex justify-center gap-2.5 items-center font-Inter font-medium text-sm text-white"
                   >
                     Send Message <FiSend />
 
@@ -113,85 +86,44 @@ const Message = () => {
                 and our team will respond as soon as possible.
               </Text>
 
-              {/* touch box */}
+              {/* touch box 1*/}
+              <CommonCard Icon={MdAccessTime}  tittle={" Business Hours"} info={"Mon-Sat, 9:00 AM – 6:00 PM"}/>
 
-              <div
-                className="w-full p-6 flex items-center  gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
-                 rounded-2xl mt-[62px]"
-              >
-                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
-                  <MdAccessTime className="text-2xl  " />
+              {/* touch box 2*/}
+              <CommonCard Icon={HiOutlineMail}  tittle={"Email"} info={"info@spacedevelopment.com"}/>
 
+              {/* touch box 3*/}
+              <CommonCard Icon={FiPhone}  tittle={"Contact Us"} info={"+880 1234 567 890"}/>
+
+
+                 {/* touch box 4*/}
+              <CommonCard Icon={IoLocationOutline}  tittle={"Location"} info={" Momtaz Plaza (4th floor), House#7, Road#4 Opposite of LabaidHospital Dhaka, 1205"}/>
+
+      
+              <Text varaint="h3" className="text-[20px]! mt-12">Connect With Us</Text>
+
+              <div className="icons mt-4 flex gap-4 items-center">
+
+
+                <div className="w-12 h-12 rounded-full bg-brand/10 flex justify-center items-center">
+                  <FiFacebook className="text-2xl text-brand"/>
                 </div>
-                <div className="">
-                  <Text varaint="h4" className="text-contactmessagesecond">
-                     Business Hours
-                  </Text>
-                  <Text varaint="h5" className="text-serpara mt-1">
-                    Mon-Sat, 9:00 AM – 6:00 PM
-                  </Text>
+
+                <div className="w-12 h-12 rounded-full bg-brand/10 flex justify-center items-center">
+
+                <FiLinkedin className="text-2xl text-brand"/>
                 </div>
+
+                <div className="w-12 h-12 rounded-full bg-brand/10 flex justify-center items-center">
+                <IoLogoInstagram className="text-2xl text-brand"/>
+                </div>
+
+                <div className="w-12 h-12 rounded-full bg-brand/10 flex justify-center items-center">
+                <LuYoutube className="text-2xl text-brand"/>
+                </div>
+
+
               </div>
-
-              <div
-                className="w-full p-6 flex items-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
-                 rounded-2xl mt-[62px]"
-              >  
-               <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
-                  <HiOutlineMail  className="text-2xl  " />
-
-                </div>
-                <div className="">
-                  <Text varaint="h4" className="text-contactmessagesecond">
-                    Email
-                  </Text>
-                  <Text varaint="h5" className="text-serpara mt-1">
-                    info@spacedevelopment.com
-                  </Text>
-                </div>
-              </div>
-
-              <div
-                className="w-full p-6 flex items-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
-                 rounded-2xl mt-[62px]"
-              >
-                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
-                  <FiPhone   className="text-2xl  " />
-
-                </div>
-                <div className="">
-                  <Text varaint="h4" className="text-contactmessagesecond">
-                    Contact Us
-                  </Text>
-                  <Text varaint="h5" className="text-serpara mt-1">
-                    +880 1234 567 890
-                  </Text>
-                </div>
-              </div>
-
-              <div
-                className="w-full p-6 flex justify-center gap-2 shadow-[0_0_4px_rgba(0,0,0,0.1)]
-                 rounded-2xl mt-[62px]"
-              >
-
-                <div className="w-12 h-12 rounded-full bg-brand opacity-10 flex justify-center items-center">
-                  <IoLocationOutline    className="text-2xl  " />
-
-                </div>
-
-                
-                <div className="">
-                  <Text varaint="h4" className="text-contactmessagesecond">
-                    Location
-                  </Text>
-                  <Text varaint="h5" className="text-serpara mt-1 w-[428px]">
-                    Momtaz Plaza (4th floor), House#7, Road#4 Opposite of Labaid
-                    Hospital Dhaka, 1205
-                  </Text>
-                </div>
-              </div>
-
-              <Text varaint="h3" className="text-[20px] mt-12">Connect With Us</Text>
             </div>
 
             {/* right part end */}
