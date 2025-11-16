@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from "next/image";
 import IconLeef from '../../../public/photos/icon-lef.png'
+import IconClock from '../../../public/photos/icon-clock.png'
+import IconShild from '../../../public/photos/icon-shild.png'
+import IconBage from '../../../public/photos/icon-bage.png'
 import PrimaryButton from '../../../app/Components/Ui/PrimaryButton'
 
 
@@ -29,31 +32,31 @@ const Components3 = () => {
 
         <div className="w-full md:w-[312px] h-auto md:h-[252px] p-[24px] md:p-[32px] shadow rounded-[16px] ">
             <div className="w-[48px] h-[48px] ">
-              <Image src={IconLeef} alt="icon" className="w-full h-full"/>
+              <Image src={IconClock} alt="icon" className="w-full h-full"/>
             </div>
 
-            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Sustainability</p>
-            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Eco-friendly practices for a better tomorrow</p>
+            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Timely Delivery</p>
+            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Meeting deadlines without compromise</p>
         </div>
 
 
         <div className="w-full md:w-[312px] h-auto md:h-[252px] p-[24px] md:p-[32px] shadow rounded-[16px] ">
             <div className="w-[48px] h-[48px] ">
-              <Image src={IconLeef} alt="icon" className="w-full h-full"/>
+              <Image src={IconShild} alt="icon" className="w-full h-full"/>
             </div>
 
-            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Sustainability</p>
-            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Eco-friendly practices for a better tomorrow</p>
+            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Quality Assurance</p>
+            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Excellence in every detail</p>
         </div>
 
 
         <div className="w-full md:w-[312px] h-auto md:h-[252px] p-[24px] md:p-[32px] shadow rounded-[16px] ">
             <div className="w-[48px] h-[48px] ">
-              <Image src={IconLeef} alt="icon" className="w-full h-full"/>
+              <Image src={IconBage} alt="icon" className="w-full h-full"/>
             </div>
 
-            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Sustainability</p>
-            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Eco-friendly practices for a better tomorrow</p>
+            <p className=" text-[18px] md:text-[20px] font-semibold mt-[16px]">Expert Team</p>
+            <p className=" text-[14px] md:text-[16px] font-normal mt-[8px]">Skilled professionals at your service</p>
         </div>
 
 
